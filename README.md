@@ -1,5 +1,5 @@
 
-## FastNews
+
 * [Description](#description)
 * [Presentation](#presentation)
 * [Technologies](#technologies)
