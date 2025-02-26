@@ -3,7 +3,7 @@
 * [Description](#description)
 * [Presentation](#presentation)
 * [Technologies](#technologies)
-* [Link](#link)
+
 
 ## Description
 News is a web application that aggregates news from different sites. 
