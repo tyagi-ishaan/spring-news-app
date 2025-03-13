@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.ishaan.news.model.Category;
-
 class CategoryTest {
 
 	Category category1;

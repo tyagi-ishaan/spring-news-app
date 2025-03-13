@@ -5,7 +5,6 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,6 @@ public class UserListService {
 
 	private final UserListRepository userListRepository;
 
-	@Autowired
 	public UserListService(UserListRepository userListRepository) {
 		super();
 		this.userListRepository = userListRepository;

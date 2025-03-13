@@ -2,7 +2,6 @@ package com.ishaan.news.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -16,7 +15,6 @@ public class WebSiteService {
 
 	private final WebSiteRepository webSiteRepository;
 
-	@Autowired
 	public WebSiteService(WebSiteRepository webSiteRepository) {
 		super();
 		this.webSiteRepository = webSiteRepository;

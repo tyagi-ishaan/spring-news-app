@@ -4,7 +4,6 @@ import static org.hamcrest.CoreMatchers.equalToObject;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -28,7 +27,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-import com.ishaan.news.controller.IndexController;
 import com.ishaan.news.dto.FeedDTO;
 import com.ishaan.news.model.Category;
 import com.ishaan.news.model.User;

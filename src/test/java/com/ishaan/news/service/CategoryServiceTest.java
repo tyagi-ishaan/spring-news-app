@@ -16,7 +16,6 @@ import org.mockito.MockitoAnnotations;
 import com.ishaan.news.exception.NotFoundException;
 import com.ishaan.news.model.Category;
 import com.ishaan.news.repository.CategoryRepository;
-import com.ishaan.news.service.CategoryService;
 
 class CategoryServiceTest {
 

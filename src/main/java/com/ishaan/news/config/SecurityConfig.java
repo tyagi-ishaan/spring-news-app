@@ -27,20 +27,17 @@ public class SecurityConfig {
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-		http.authorizeRequests()
-				.antMatchers("/settings/**", "/list/**")
-				.authenticated()
-				.antMatchers("/")
-				.permitAll()
-				.and()
-				.formLogin()
-				.loginPage("/login")
-				.and()
-				.logout()
-				.deleteCookies("JSESSIONID")
-				.and()
-				.rememberMe()
-				.key("uniqueAndSecret");
+        http.authorizeRequests(requests -> requests
+                .antMatchers("/settings/**", "/list/**")
+                .authenticated()
+                .antMatchers("/")
+                .permitAll())
+                .formLogin(login -> login
+                        .loginPage("/login"))
+                .logout(logout -> logout
+                        .deleteCookies("JSESSIONID"))
+                .rememberMe(me -> me
+                        .key("uniqueAndSecret"));
 		return http.build();
 	}
 	/*

@@ -31,7 +31,6 @@ import com.ishaan.news.model.Category;
 import com.ishaan.news.model.Feed;
 import com.ishaan.news.model.WebSite;
 import com.ishaan.news.repository.FeedRepository;
-import com.ishaan.news.service.FeedService;
 import com.rometools.rome.feed.synd.SyndEntry;
 
 class FeedServiceTest {
@@ -119,6 +118,7 @@ class FeedServiceTest {
 		assertNotNull(feeds);
 	}
 
+	@SuppressWarnings("unchecked")
 	@Test
 	void testFetchByCategory() {
 		// given

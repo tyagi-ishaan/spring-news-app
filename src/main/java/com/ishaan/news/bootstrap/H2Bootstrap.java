@@ -9,7 +9,6 @@ import java.util.List;
 
 import javax.transaction.Transactional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -39,7 +38,6 @@ public class H2Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 	private final WebSiteRepository webSiteRepository;
 	private final UserListRepository userListRepository;
 
-	@Autowired
 	public H2Bootstrap(UserRepository userRepository, CategoryRepository categoryRepository,
 			FeedRepository feedRepository, PasswordEncoder encoder, WebSiteRepository webSiteRepository,UserListRepository userListRepository) {
 		this.userRepository = userRepository;
@@ -51,7 +49,7 @@ public class H2Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 	}
 
 	@Override
-	public void onApplicationEvent(ContextRefreshedEvent event) {
+	public void onApplicationEvent(@SuppressWarnings("null") ContextRefreshedEvent event) {
 
 		
 		try {

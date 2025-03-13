@@ -3,7 +3,6 @@ package com.ishaan.news.service.token;
 import java.time.Instant;
 import java.util.UUID;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ishaan.news.exception.NotFoundException;
@@ -20,7 +19,6 @@ public class ResetPasswordTokenService implements TokenService {
 
 	private final ResetPasswordTokenRepository tokenRepository;
 
-	@Autowired
 	public ResetPasswordTokenService(ResetPasswordTokenRepository tokenRepository) {
 		super();
 		this.tokenRepository = tokenRepository;
